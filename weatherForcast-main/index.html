@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="weather, forecast, temperature, conditions, climate">
+
+    <title>Weather Forcast</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="part1">
+        <div class="navbar">
+          <div style="display: flex; flex-direction: row">
+            <input
+              type="text"
+              id="location12"
+              placeholder="*Pune"
+              value="Pune"
+            />
+            <button id="buttons" class="btn">Show</button>
+          </div>
+          <p id="currentDate">24/4/2023</p>
+        </div>
+        <div class="largepart">
+          <div class="horizontal">
+            <div class="temp">
+              <p id="temparature">XX.XX°c</p>
+            </div>
+            <div class="wind">
+              <div class="windInfo">
+                <img src="wind.gif" alt="Not found" />
+                <p id="windSpeed">X.XX mps</p>
+              </div>
+              <div class="humidity">
+                <img src="humidity.gif" alt="" />
+                <p id="humidityPer">XX%</p>
+              </div>
+            </div>
+          </div>
+          <div class="desc">
+            <p id="descriptionWeathoe"></p>
+            <img src="" alt="" id="iconWeather" />
+          </div>
+        </div>
+      </div>
+      <div class="part2">
+        <div class="navbar">
+          <p style="font-size: 2rem; color: rgb(10, 1, 1)">Weather</p>
+        </div>
+        <div class="time"><p id="currentTime">HH:MM:SS</p></div>
+        <div class="information">
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img src="thermameter.gif" alt="" />
+            <p id="maxTemp">23</p>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img src="thermameter2.gif" alt="" />
+            <p id="minTemp">23</p>
+          </div>
+
+          <p id="feelsLike">Feels like:23</p>
+        </div>
+        <div class="descriptionOnLeft">
+          <p id="duplicateDesc">Cloudy</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
